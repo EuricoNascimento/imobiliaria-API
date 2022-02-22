@@ -1,38 +1,39 @@
-package com.lpweb.imobiliaria.entitys
+package com.lpweb.imobiliaria.model
 
-import java.sql.Date
 import javax.persistence.*
 import javax.validation.constraints.NotNull
+import javax.validation.constraints.Size
 
 @Entity
-@Table(name = "locacao")
-class Locacao (
+@Table(name = "imovel")
+class Imovel (
     @field:Id
     @field:GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Int,
 
     @field:NotNull
-    @field:ManyToOne
-    var imovel: Imovel,
+    @field:Size(max = 50)
+    var tipo_imovel: String,
 
     @field:NotNull
-    @field:ManyToOne
-    var inquilino: Cliente,
+    @field:Size(max = 255)
+    var endereco: String,
 
     @field:NotNull
-    var ativo: Short,
+    @field:Size(max = 10)
+    var cep: String,
 
     @field:NotNull
-    var data_inicio: Date,
+    var dormitorios: Int,
 
     @field:NotNull
-    var data_fim: Date,
+    var banheiros: Int,
 
     @field:NotNull
-    var perc_multa: Double,
+    var suites: Int,
 
     @field:NotNull
-    var valor_aluguel: Double,
+    var metragem: Int,
 
     @field:Column(columnDefinition="TEXT")
     var obs: String

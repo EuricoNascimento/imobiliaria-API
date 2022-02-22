@@ -1,6 +1,6 @@
 package com.lpweb.imobiliaria.controller
 
-import com.lpweb.imobiliaria.entitys.Cliente
+import com.lpweb.imobiliaria.model.Cliente
 import com.lpweb.imobiliaria.repository.ClienteRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*

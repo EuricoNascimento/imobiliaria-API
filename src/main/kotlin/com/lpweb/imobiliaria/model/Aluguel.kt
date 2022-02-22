@@ -1,4 +1,4 @@
-package com.lpweb.imobiliaria.entitys
+package com.lpweb.imobiliaria.model
 
 import java.sql.Date
 import javax.persistence.*
