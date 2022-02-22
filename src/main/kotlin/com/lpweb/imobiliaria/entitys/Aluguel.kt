@@ -5,7 +5,7 @@ import javax.persistence.*
 import javax.validation.constraints.NotNull
 
 @Entity
-@Table(name = "alugueis")
+@Table(name = "aluguel")
 class Aluguel(
     @field:Id
     @field:GeneratedValue(strategy = GenerationType.IDENTITY)
